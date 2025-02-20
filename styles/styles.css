@@ -1,0 +1,291 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #bcfbf8;
+}
+
+/* Navbar */
+header.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #389493;
+  color: white;
+  z-index: 9999;
+  position: fixed;
+}
+
+header.navbar-container .nav-list ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header.navbar-container .nav-list li a {
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+  background-color: white;
+  color: #389493;
+}
+
+/* Main Content */
+main {
+  flex: 1;
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Beranda Section */
+.content #beranda {
+  padding-top: 7rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.content .beranda-description {
+  flex: 1;
+  margin-left: 10rem;
+}
+
+.content .beranda-description h1 {
+  margin: 1rem 0;
+  font-size: 5rem;
+  color: #265d5f;
+}
+
+.content .beranda-description p {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  margin: 2rem 0;
+}
+
+.content .beranda-description button {
+  padding: 0.8rem 2.5rem;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color: #389493;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.content .beranda-description button:hover {
+  border: 3px solid #389493;
+  background-color: transparent;
+  color: #389493;
+}
+
+.content .beranda-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.content .beranda-image img {
+  max-width: 100%;
+  width: 650px;
+}
+
+/* Tentang Section */
+.content .tentang {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-image: url("../assets/our-product-bg.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 2rem;
+}
+
+.content .tentang .tentang-overlay {
+  position: absolute;
+  max-width: 50%;
+  padding: 5rem;
+}
+
+.content .tentang .tentang-overlay h1 {
+  font-size: 2.5rem;
+}
+
+.content .tentang .tentang-overlay p {
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  text-align: justify;
+}
+
+/* Tujuan Section */
+.content #tujuan {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin: 4rem;
+}
+
+.content .tujuan-description {
+  flex: 1;
+  padding: 3rem;
+}
+
+.content .tujuan-description h1 {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+  color: #265d5f;
+}
+
+.content .tujuan-description p {
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  margin: 2rem 0;
+  text-align: justify;
+}
+
+.content .tujuan-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.content .tujuan-image img {
+  max-width: 100%;
+  width: 400px;
+}
+
+/* Fitur Section */
+.content #fitur h1 {
+  font-size: 2.5rem;
+  color: #265d5f;
+  text-align: center;
+}
+
+.content #fitur .fitur-container {
+  margin-inline: 6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.content #fitur .fitur-card {
+  background-color: white;
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.content #fitur img {
+  height: 200px;
+}
+
+.content #fitur .fitur-card p {
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.content #prototype {
+  margin-bottom: 5rem;
+}
+
+.content #prototype h1 {
+  font-size: 2.5rem;
+  color: #265d5f;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.content #prototype p {
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  margin: 4rem;
+  text-align: center;
+}
+
+.content #prototype .prototype-container {
+  margin-inline: 6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.content #prototype .prototype-card {
+  background-color: white;
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.content #prototype img {
+  height: 200px;
+  border-radius: 20px;
+  margin: 0 2rem;
+}
+
+.content #prototype .prototype-container a {
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.content #prototype .prototype-container button {
+  padding: 1rem 1.5rem;
+  border: 3px solid transparent;
+  border-radius: 20px;
+  background-color: #1e1e1e;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.content #prototype .prototype-container a:hover {
+  color: #1e1e1e;
+}
+
+.content #prototype .prototype-container button:hover {
+  border: 3px solid #1e1e1e;
+  background-color: transparent;
+}
